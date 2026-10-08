@@ -3,14 +3,14 @@ import time
 
 #PROMENADEN
 
-gå_ut = input("Det är kusligt ute. Vill du gå ut? ja eller nej: ")
+gå_ut = input("Det är kusligt ute. Vill du gå ut? ja eller nej: ").lower()
 
 if gå_ut == "ja":
     print("Vad kul! Ta på ytterkläder så går vi")
     
     time.sleep(1)
 
-    jacka = input("Vilken jacka vill du ta på? fina eller fula: ")
+    jacka = input("Vilken jacka vill du ta på? fina eller fula: ").lower()
 
     if jacka == "fina":
         print("Den där kan du inte ha på! Vi ska ju ut i skogen!")
@@ -19,7 +19,7 @@ if gå_ut == "ja":
     
     time.sleep(2)
 
-    skorna_baklänges = input("Vill du ta på skorna baklänges? ja eller nej: ")
+    skorna_baklänges = input("Vill du ta på skorna baklänges? ja eller nej: ").lower()
 
     if skorna_baklänges == "ja":
         print("Det gick inte att ta på skorna baklänges. Du fick bara ont i foten.")
@@ -36,10 +36,10 @@ if gå_ut == "ja":
 
     time.sleep(2)
 
-    väg = input("Du kommer till en korsning.  1. Sväng vänster, 2. Sväng höger : ")
+    väg = input("Du kommer till en korsning.  1. Sväng vänster, 2. Sväng höger : ").lower()
 
     if väg == "1":
-        enter = input("du kom till ett hus. Vill du gå in? ja eller nej: ")
+        enter = input("du kom till ett hus. Vill du gå in? ja eller nej: ").lower()
         if enter == "ja":
             print("du blev uppäten av en vampyr och dog")
         else:
